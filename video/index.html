@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+      <title>ML5.js</title>
+      <script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="../index.css">
+    </head>
+
+  <body>
+    <!-- Video Classification -->
+    <div id="videoClassification">
+      <h2>Video Classification using pretrained model MobileNet</h2>
+      <button id="startCamera" onclick="startCamera()">Start camera</button>
+      <video autoplay playsinline muted width="600" height="400" id="videoElement"></video>
+      <h3 id="videoText">Model is loading..</h3>
+      <script src="./video.js"></script>
+    </div>
+  </body>
+</html>

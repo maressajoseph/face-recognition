@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+      <title>ML5.js</title>
+      <script src="https://unpkg.com/ml5@0.1.2/dist/ml5.min.js"></script>
+      <script src="../node_modules/face-api.js/dist/face-api.js"></script>
+      <link rel="stylesheet" type="text/css" href="../index.css">
+
+      <style>
+        canvas {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 500px;
+          height: 375px;
+        }
+
+        #webcam {
+          position: relative;
+        }
+        </style>
+    </head>
+
+  <body>
+    <!-- Feature Extractor -->
+    <div id="featureExtractor">
+      <h2>Feature extractor</h2>
+      <h4 id="loadingFeature">Loading..</h4>
+      <!-- <h5>Add faces to the Jungle Minds ML model</h5>
+      <label for="featureLabel">Name of the face</label>
+      <input type="text" id="featureLabel" />
+      <button onclick="addImage()">Add face</button>
+      <button id="trainButton" onclick="trainModel()">Save</button>
+      <button onclick="download()">Download and save JM ML model</button>
+      <img id="jmImage" alt="face" /> -->
+      <div class="videoContainer">
+        <video autoplay playsinline muted width="500" height="375" id="webcam"></video>
+      </div>
+      <p id="featureResult"></p>
+     <script src="./feature.js"></script>
+    </div>
+  </body>
+</html>
